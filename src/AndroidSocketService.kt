@@ -11,6 +11,9 @@ class AndroidSocketService {
      * 端口号
      */
     val PORT = 8888
+    /**
+     * 客户端列表
+     */
     var mClientList = ArrayList<Socket>()
 
     companion object {
@@ -75,7 +78,6 @@ class AndroidSocketService {
 
         /**
          * 关闭客户端
-         *
          */
         private fun closeSocket() {
             mClientList.remove(socket)
